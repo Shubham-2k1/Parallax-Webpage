@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Parallax</title>
+</head>
+<body>
+    <header>
+        <a href="#"class="logo">Logo<a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    
+    <!--Background Setup-->
+    <section>
+        <img src="stars.png" id="stars"> 
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind"> 
+        <h2 id="text">Moon Light</h2> 
+        <a href="#sec" id="btn">Explore</a>
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+
+    <!--Text-->
+    <div class="sec" id="sec">
+        <h2>Learning Parallax Effect</h2>
+        <p>A parallax webpage is a design technique used to create a visually engaging and dynamic user experience on websites. It involves the use of layered elements that move at different speeds as the user scrolls down the page, creating an illusion of depth and perspective. This effect is inspired by the way objects in the real world appear to shift in relation to each other when observed from different angles – a phenomenon known as parallax.
+        The key feature of a parallax webpage is its ability to draw users in with its captivating andimmersive design. As the user scrolls, foreground elements move faster than background elements,generating a sense of movement and animation. This can be achieved through various methods, such as CSSanimations, JavaScript libraries, or even more advanced technologies like WebGL.
+        <br><br>
+        Parallax scrolling adds an extra dimension to storytelling and content presentation. It's often used toguide users through a narrative, with each scroll revealing new information or visual elements. Thistechnique is particularly popular in websites that want to showcase products, portfolios, storytelling,or single-page applications.
+        While parallax design can be visually striking and enhance user engagement, it's important to balanceaesthetics with usability. Overly complex parallax effects can slow down page loading times, leading toa frustrating user experience, especially on mobile devices with limited processing power and bandwidth.
+        <br><br>
+        In recent years, designers have experimented with combining parallax effects with other design trends,such as minimalism, micro-interactions, and responsive design, to create websites that are not onlyvisually appealing but also functional across different devices and screen sizes.
+        <br><br>
+        In conclusion, a parallax webpage is a design technique that adds depth, movement, and interactivity toweb pages, creating a more captivating user experience. When used thoughtfully and optimally, parallaxscrolling can contribute to a website's aesthetics and storytelling capabilities, providing a memorableinteraction that keeps users engaged and encourages them to explore the content further. <b>Made byShubham Bhardwaj(LPU CSE 24') Hope you like it do drop a star on the repository</b></p>
+    </div>
+
+    <!--Adding JavaScript-->
+    <script src="index.js"></script>
+    <!-- <script>
+        let stars = document.getElementById('stars');
+        
+        let moon = document.getElementById('moon');
+        
+        let mountains_behind = document.getElementById('mountains_behind');
+        
+        let text = document.getElementById('text');
+
+        let btn = document.getElementById('btn');
+
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value*0.25 + 'px';
+            moon.style.top = value*1.05 + 'px';
+            mountains_behind.style.top = value*.5 + 'px';
+            mountains_front.style.top = value*0 + 'px';
+            text.style.marginRight = value*4 + 'px';
+            text.style.marginTop = value*1.5 + 'px';
+            btn.style.marginTop = value*2 + 'px';
+            header.style.marginTop = value*0.5 + 'px';
+        })
+        
+    </script> -->
+</body>
+</html>
